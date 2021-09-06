@@ -1,17 +1,28 @@
-console.log("App");
+import HomePage from './pages/HomePage/index.js'
+import InfoPage from './pages/InfoPage/index.js'
+import RouterUtils from './utils/router.js'
 
-import Components from "./Components.js";
+export default function App({ $target }) {
+  const homePage = new HomePage({
+    $target,
+    initialState: '테스트 상태',
+  })
 
-import Home from "./Home/index.js";
+  const infoPage = new InfoPage({
+    $target,
+  })
 
-export default class App extends Components {
-  componentDidMount() {
-    new Home(document.querySelector(".home"));
+  this.route = () => {
+    const { pathname } = location
+    $target.innerHTML = ''
+    if (pathname === '/') {
+      homePage.render()
+    } else if (pathname === '/info') {
+      infoPage.render()
+    }
   }
 
-  template() {
-    return `
-    <section class="home"></section>
-    `;
-  }
+  this.route()
+
+  RouterUtils.initRoute(this.route)
 }
