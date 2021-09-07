@@ -1,0 +1,144 @@
+.HomePage {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.Header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    background : lavender
+}
+
+.HeaderTitle {
+    padding: 25px;
+}
+
+.MenuButton {
+    width: 30px;
+    height: 30px;
+    margin: 25px;
+    background : peachpuff;
+}
+
+.Menu {
+    height: 0;
+    /* overflow: hidden; */
+    display: none;
+}
+
+.Menu > div:last-child {
+margin-top: 0px;
+}
+
+.Menu.navbar {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 200px;
+    height: 100%;
+    background : wheat;
+    margin-left: 240px;
+}
+
+.menu {
+    /* display: flex; */
+    /* width: 30px; */
+    /* height: 30px; */
+    /* margin: 25px; */
+    background : orange;
+    /* margin-left: 165px; */
+    /* border: none; */
+    position: absolute;
+    right: 300px;
+    /* padding: 20px; */
+    z-index: 1;
+    cursor: pointer;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: blueviolet;
+    margin: 3px 0;
+    transition: 0.4s;
+    /* margin-left: 165px; */
+}
+
+.menu.open .bar-1{
+    transform: rotate(40deg);
+}
+
+.menu.open .bar-2{
+    opacity: 0;
+}
+
+.menu.open .bar-3{
+    transform: rotate(-40deg);
+    margin-top: -12px;
+}
+
+.Text {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+.Content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.Content > div {
+    margin-bottom: 30px;
+}
+
+.MainInfo {
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid;
+}
+
+.MainInfo > div {
+    margin-bottom: 30px;
+    font-size: 36px;
+    text-align: center;
+}
+
+.MainInfo > div:last-child {
+    margin-bottom: 0px;
+    font-size: 18px;
+}
+
+.SampleImage {
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid;
+}
+
+.MainButton {
+    border-radius: 5px;
+    background: none;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid;
+    margin-bottom: 30px;
+}
+
+.Count {
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid;
+    text-align: center;
+}

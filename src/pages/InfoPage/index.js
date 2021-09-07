@@ -1,3 +1,4 @@
+import Header from '../../components/Header.js'
 import InfoContent from '../../components/InfoContent.js'
 import InfoText from '../../components/InfoText.js'
 import LinkButton from '../../components/InfoButton.js'
@@ -29,6 +30,10 @@ export default function InfoPage({ $target }) {
   this.render = () => {
     $target.appendChild($page)
   }
+
+  new Header({
+    $target : $page
+  })
 
   const $mainContent = document.createElement('div')
   $mainContent.className = 'MainContent'
