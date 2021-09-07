@@ -49,16 +49,10 @@ margin-top: 0px;
 }
 
 .menu {
-    /* display: flex; */
-    /* width: 30px; */
-    /* height: 30px; */
-    /* margin: 25px; */
-    background : orange;
-    /* margin-left: 165px; */
-    /* border: none; */
+    /* background : orange; */
+    /* border: 1px solid orange; */
     position: absolute;
     right: 300px;
-    /* padding: 20px; */
     z-index: 1;
     cursor: pointer;
 }
@@ -69,7 +63,6 @@ margin-top: 0px;
     background-color: blueviolet;
     margin: 3px 0;
     transition: 0.4s;
-    /* margin-left: 165px; */
 }
 
 .menu.open .bar-1{

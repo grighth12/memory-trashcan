@@ -8,13 +8,28 @@ export default function Header({$target}) {
     this.render = () => {
         $header.innerHTML = `
             <div class='HeaderTitle'>기억휴지통</div>
-            <button class='menu'>
+            <div class='menu'>
                 <div class='bar bar-1'></div>
                 <div class='bar bar-2'></div>
                 <div class='bar bar-3'></div>
-            </button>
+            </div>
         `
     }
+
+    // const menu = document.querySelector('.menu')
+    // const nav = document.querySelector('.Menu')
+
+    // $target.addEventListener('click', (e) => {
+    //     const { className } = e.target
+
+    //     console.log(className)
+
+    //     if (className == menu) {
+    //         e.preventDefault();
+    //         menu.classList.toggle('open')
+    //         nav.classList.toggle('navbar')
+    //     }
+    // })
     
     this.render()
 }

@@ -50,6 +50,7 @@ export default function HomePage({ $target, initialState }) {
 
   $page.addEventListener('click', (e) => {
     const { className } = e.target
+    console.log(className)
 
     switch (className) {
       case 'MainButton' :
@@ -58,29 +59,18 @@ export default function HomePage({ $target, initialState }) {
       case 'menu' :
         const menu = document.querySelector('.menu')
         const nav = document.querySelector('.Menu')
-        e.preventDefault();
+        e.preventDefault()
         menu.classList.toggle('open')
-        // e.preventDefault();
         nav.classList.toggle('navbar')
-      break  
-      // case 'CloseButton' :
-      //   const menu = document.querySelector('#Menu')
-      //   if(menu.classList.contains('hidden')) {
-      //     menu.classList.remove('hidden')
-      //   } else {
-      //     menu.classList.add('hidden')
-      //   }
-      // break
-      // case 'MenuButton' :
-      //   // const menu = document.querySelector('#Menu')
-      //   e.preventDefault()
-      //   menu.classList.add('active')
-      // break
-      // case 'CloseButton' :
-      //   const menu = document.querySelector('#Menu')
-      //   e.preventDefault()
-      //   menu.classList.add('hidden')
-      // break
+        e.preventDefault()
+        break  
+      case 'menu open' :
+        const menuOpen = document.querySelector('.menu.open')
+        const navBar = document.querySelector('.nav.navbar')
+        e.preventDefault()
+        menuOpen.classList.toggle('open')
+        navBar.classList.toggle('navbar')
+        e.preventDefault()
     }
    
   })
