@@ -52,7 +52,7 @@ margin-top: 0px;
     /* background : orange; */
     /* border: 1px solid orange; */
     position: absolute;
-    right: 300px;
+    right: 500px;
     z-index: 1;
     cursor: pointer;
 }
@@ -134,4 +134,17 @@ margin-top: 0px;
     border-radius: 10px;
     border: 1px solid;
     text-align: center;
+}
+
+.PlanIntention {
+    margin: 30px;
+}
+
+.Footer {
+    display: flex;
+    position: absolute;
+    bottom: -100px;
+    background: honeydew;
+    width: 480px;
+    height: 100px;
 }

@@ -5,6 +5,8 @@ import MainInfo from './components/MainInfo.js'
 import SampleImage from './components/SampleImage.js'
 import MainButton from './components/MainButton.js'
 import Count from './components/Count.js'
+import PlanIntention from './components/PlanIntention.js'
+import Footer from '../../components/Footer.js'
 
 export default function HomePage({ $target, initialState }) {
   const $page = document.createElement('div')
@@ -85,5 +87,13 @@ export default function HomePage({ $target, initialState }) {
     const { currentCount } = this.state
     count.setState(currentCount)
   }
+
+  new PlanIntention({
+    $target : $mainContent
+  })
+
+  new Footer({
+    $target : $page
+  })
 
 }
