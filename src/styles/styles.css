@@ -1,0 +1,17 @@
+@import "../pages/InfoPage/info-page.css";
+@import "../pages/HomePage/home-page.css";
+@import "./reset.css";
+
+#App {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+#main {
+  width: 480px;
+  display: flex;
+  justify-content: center;
+  background: aliceblue;
+}
