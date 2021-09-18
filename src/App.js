@@ -1,5 +1,6 @@
 import HomePage from './pages/HomePage/index.js'
 import InfoPage from './pages/InfoPage/index.js'
+import WritePage from './pages/WritePage/index.js'
 import RouterUtils from './utils/router.js'
 
 export default function App({ $target }) {
@@ -12,6 +13,10 @@ export default function App({ $target }) {
     $target,
   })
 
+  const writePage = new WritePage({
+    $target,
+  })
+
   this.route = () => {
     const { pathname } = location
     $target.innerHTML = ''
@@ -19,6 +24,8 @@ export default function App({ $target }) {
       homePage.render()
     } else if (pathname === '/info') {
       infoPage.render()
+    } else if (pathname === '/write') {
+      writePage.render()
     }
   }
 
