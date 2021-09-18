@@ -1,0 +1,32 @@
+@import './info-page.css';
+@import './reset.css';
+@import './write.css';
+#App {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+#main {
+  width: 480px;
+  display: flex;
+  justify-content: center;
+  background: aliceblue;
+  padding: 20px 10px;
+}
+
+.Wrapper--horizontal-left {
+  width: 80%;
+  display: flex;
+  justify-content: end;
+}
+
+.TopText {
+  position: sticky;
+  top: 0px;
+  right: 0px;
+  width: 80%;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
