@@ -65,7 +65,7 @@ export default function HomePage({ $target, initialState }) {
         menu.classList.toggle('open')
         nav.classList.toggle('navbar')
         e.preventDefault()
-        break  
+      break  
       case 'menu open' :
         const menuOpen = document.querySelector('.menu.open')
         const navBar = document.querySelector('.nav.navbar')
@@ -73,6 +73,13 @@ export default function HomePage({ $target, initialState }) {
         menuOpen.classList.toggle('open')
         navBar.classList.toggle('navbar')
         e.preventDefault()
+      break
+      case 'notice' :
+        RouterUtils.push('/notice')
+      break
+      case 'qna' :
+        RouterUtils.push('/qna')
+      break 
     }
    
   })

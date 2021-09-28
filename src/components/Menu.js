@@ -13,8 +13,8 @@ export default function Menu({$target}) {
                 <div class='bar bar-2'></div>
                 <div class='bar bar-3'></div>
             </div> -->
-            <div class='Text'>공지사항</div>
-            <div class='Text'>문의</div>
+            <div class='notice'>공지사항</div>
+            <div class='qna'>문의</div>
         `
     }
 

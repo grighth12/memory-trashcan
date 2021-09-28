@@ -1,5 +1,7 @@
-@import "../pages/InfoPage/info-page.css";
-@import "../pages/HomePage/home-page.css";
+@import "./info-page.css";
+@import "./home-page.css";
+@import "./notice-page.css";
+@import "./qna-page.css";
 @import "./reset.css";
 
 #App {
