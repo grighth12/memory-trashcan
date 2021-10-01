@@ -33,6 +33,11 @@ export default function NoticePage({ $target }) {
     new Border({
         $target : $noticeContent,
     })
+    
+    const $noticeInfo = document.createElement('div')
+    $noticeInfo.className = 'NoticeInfo'
+
+    $noticeContent.appendChild($noticeInfo)
 
     new Border({
         $target : $noticeContent,
